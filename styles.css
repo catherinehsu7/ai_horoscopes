@@ -1,0 +1,186 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/* === GENERAL === */
+
+body {
+  background-color: #fcf1fc;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #f8b4d7;
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  font-family: Roboto, -apple-system, sans-serif;
+}
+
+h2 {
+  color: #e3bef3;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-family: Roboto, -apple-system, sans-serif;
+}
+
+p {
+  color: #c080c0;
+  font-size: 14px;
+  text-align: center;
+  font-family: Roboto, -apple-system, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  }
+
+/* === HOROSCOPE RADIO === */
+
+#radios {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#radios label:hover::before {
+  content: attr(for);
+  font-family: Roboto, -apple-system, sans-serif;
+  text-transform: none;
+  font-size: 10.5px;
+  position: absolute;
+  top: 170%;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background-color: #57026f;
+  color: #fff;  
+  padding: 4px;
+  border-radius: 2px;
+  display: block;
+  z-index: 2;
+}
+
+#radios label {
+  cursor: pointer;
+  position: relative;
+}
+
+#radios label + label {
+  margin-left: 7px;
+}
+
+input[type="radio"] {
+  opacity: 0; /* hidden but still tabable */
+  position: absolute;
+}
+
+input[type="radio"] + span {
+  font-family: 'Material Icons';
+  color: #c080c0;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 13px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+input[type="radio"]:checked + span {
+  color: #fff;
+  background-color: #ffc2e2;
+}
+
+input[type="radio"]:focus + span {
+  color: #fff;
+}
+
+/* === SUBMIT === */
+input[type=submit] {
+  background-color: #ffc2e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f0ceff;
+}
+
+/* === ICONS === */
+
+.ai {
+  font-style:normal;
+  font-weight:bold;
+  font-size:30px;
+  line-height: 40px;
+}
+
+.ai.aries,.ai.taurus,.ai.gemini,.ai.cancer,.ai.leo,.ai.virgo,.ai.libra,.ai.scorpio,.ai.sagittarius,.ai.capricorn,.ai.aquarius,.ai.pisces, .ai.relationships {
+  font-weight:normal;
+}
+
+.ai.aries:before {
+  content:"\2648";
+}
+.ai.taurus:before {
+  content:"\2649";
+}
+.ai.gemini:before {
+  content:"\264A";
+}
+.ai.cancer:before {
+  content:"\264B";
+}
+.ai.leo:before {
+  content:"\264C";
+}
+.ai.virgo:before {
+  content:"\264D";
+}
+.ai.libra:before {
+  content:"\264E";
+}
+.ai.scorpio:before {
+  content:"\264F";
+}
+.ai.sagittarius:before {
+  content:"\2650";
+}
+.ai.capricorn:before {
+  content:"\2651";
+}
+.ai.aquarius:before {
+  content:"\2652";
+}
+.ai.pisces:before {
+  content:"\2653";
+}
+
+/* === FOOTER === */
+
+.footer {
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 28px;
+}
